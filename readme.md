@@ -13,7 +13,7 @@ A key feature of this REST API is that almost everything is handled inline, with
 ### Dependencies
 
 - [UnityMainThreadDispatcher](https://github.com/PimDeWitte/UnityMainThreadDispatcher)
-- Newtonsoft.json [https://www.nuget.org/packages/newtonsoft.json/] installed via [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
+- NuGet package [Newtonsoft.json](https://www.nuget.org/packages/newtonsoft.json/) installed via [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
 
 ## Usage and Examples
 
@@ -101,6 +101,7 @@ void Start()
 - The success and error callbacks handle the result of the request, either successful or failed.
 
 ### RESTServer
+
 RESTServer is a class for creating a REST server in Unity. It handles HTTP requests and routes defined by the user.
 
 #### Example 1: Using RouteParams
@@ -266,7 +267,7 @@ Response:
 {"status":"Set expression: joy"}
 ```
 
-- In this example, the server processes and returns JSON data.
+- The server processes and returns JSON data.
 - ExpressionController here is an example class that manages avatar facial expressions in 3D model Avatar
 
 ### Supporting Classes:
