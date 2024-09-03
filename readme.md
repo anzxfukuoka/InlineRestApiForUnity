@@ -6,8 +6,14 @@ A key feature of this REST API is that almost everything is handled inline, with
 
 ## Installation
 
-1. Download the repository as a zip file.
-2. Extract the contents to any folder in your Unity project.
+1. Install dependencies
+2. Download the repository as a zip file.
+3. Extract the contents to any folder in your Unity project.
+
+### Dependencies
+
+- [UnityMainThreadDispatcher](https://github.com/PimDeWitte/UnityMainThreadDispatcher)
+- Newtonsoft.json [https://www.nuget.org/packages/newtonsoft.json/] installed via [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
 
 ## Usage and Examples
 
@@ -139,7 +145,7 @@ curl -X get localhost:6666/api/cube/color/?hex=c0ffee
 
 Response:
 
-```json
+```csharp
 {'return': 'value'}
 ```
 
@@ -244,7 +250,7 @@ curl -X get localhost:6666/api/avatar/expression/
 
 Response:
 
-```json
+```csharp
 ["neutral","angry","joy","fun","sorrow","suprised"]
 ```
 
@@ -256,7 +262,7 @@ curl -X post localhost:6666/api/avatar/expression/ -d "{'expression_name': 'joy'
 
 Response:
 
-```json
+```csharp
 {"status":"Set expression: joy"}
 ```
 
